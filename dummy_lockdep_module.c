@@ -1,4 +1,4 @@
-/* hello.c -- a very simple kernel module */
+/* dummy_lockdep_module.c -- a simple kernel module to create a Lockdep splat */
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/module.h>
