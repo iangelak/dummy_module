@@ -25,6 +25,7 @@ void function_A(void)
     mutex_unlock(&mutexB);
     mutex_unlock(&mutexA);
 }
+/* EXPORT_SYMBOL(function_A); */
 
 void function_B(void)
 {
@@ -37,6 +38,8 @@ void function_B(void)
     mutex_unlock(&mutexA);
     mutex_unlock(&mutexB);
 }
+
+/* EXPORT_SYMBOL(function_B); */
 
 static int __init dummy_init(void)
 {
